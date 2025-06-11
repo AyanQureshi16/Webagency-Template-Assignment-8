@@ -1,0 +1,12 @@
+.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://webagency-template.netlify.app/assets/cover%20pic.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }

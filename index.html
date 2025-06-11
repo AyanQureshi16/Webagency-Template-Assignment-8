@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Agency | Create and grow your unique website today</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="#" class="text-3xl font-bold text-indigo-600">WEB AGENCY</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-10">
+                    <a href="#" class="text-gray-800 hover:text-indigo-600 font-medium">HOME</a>
+                    <a href="http://webagency-template.netlify.app/about-us" class="text-gray-800 hover:text-indigo-600 font-medium">ABOUT US</a>
+                    
+                    <div class="dropdown relative">
+                        <button class="text-gray-800 hover:text-indigo-600 font-medium flex items-center">
+                            PORTFOLIO <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white py-2 shadow-lg rounded mt-1 min-w-[200px]">
+                            <a href="http://webagency-template.netlify.app/portfolio" class="block px-4 py-2 text-gray-800 hover:bg-indigo-50 hover:text-indigo-600">PORTFOLIO SINGLE</a>
+                        </div>
+                    </div>
+                    
+                    <a href="http://webagency-template.netlify.app/news" class="text-gray-800 hover:text-indigo-600 font-medium">NEWS</a>
+                    <a href="http://webagency-template.netlify.app/contact" class="text-gray-800 hover:text-indigo-600 font-medium">CONTACT</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
+                <a href="#" class="block py-2 text-gray-800 hover:text-indigo-600">HOME</a>
+                <a href="http://webagency-template.netlify.app/about-us" class="block py-2 text-gray-800 hover:text-indigo-600">ABOUT US</a>
+                
+                <div class="py-2">
+                    <button class="flex items-center text-gray-800 hover:text-indigo-600">
+                        PORTFOLIO <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="ml-4 mt-1 hidden" id="mobile-submenu">
+                        <a href="http://webagency-template.netlify.app/portfolio" class="block py-2 text-gray-800 hover:text-indigo-600">PORTFOLIO SINGLE</a>
+                    </div>
+                </div>
+                
+                <a href="http://webagency-template.netlify.app/news" class="block py-2 text-gray-800 hover:text-indigo-600">NEWS</a>
+                <a href="http://webagency-template.netlify.app/contact" class="block py-2 text-gray-800 hover:text-indigo-600">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Create and grow your unique website today</h1>
+                <p class="text-lg mb-8 text-gray-300">Programmatically work but low hanging fruit so new economy cross-pollination. Quick sync new economy onward and upward.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="http://webagency-template.netlify.app/about-us" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                        LEARN MORE
+                    </a>
+                    <a href="http://webagency-template.netlify.app/contact" class="bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-lg border border-gray-300 transition duration-300 text-center">
+                        HIRE US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300">
+                    <img src="http://webagency-template.netlify.app/assets/fixedPriceImg.png" alt="Fixed Price Projects" class="h-16 w-auto mb-4">
+                    <h3 class="text-xl font-bold mb-3">Fixed Price Projects</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300">
+                    <img src="http://webagency-template.netlify.app/assets/onTimeImg.png" alt="Receive on time" class="h-16 w-auto mb-4">
+                    <h3 class="text-xl font-bold mb-3">Receive on time</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300">
+                    <img src="http://webagency-template.netlify.app/assets/fastWorkImg.png" alt="Fast work turnaround" class="h-16 w-auto mb-4">
+                    <h3 class="text-xl font-bold mb-3">Fast work turnaround</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Web Design -->
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4">Web Design</h2>
+                    <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <a href="http://webagency-template.netlify.app/portfolio" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                        LEARN MORE
+                    </a>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="http://webagency-template.netlify.app/assets/webDesignImg.webp" alt="Web Design" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                
+                <!-- Branding -->
+                <div class="order-3">
+                    <img src="http://webagency-template.netlify.app/assets/brandingImg.webp" alt="Branding" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="order-4">
+                    <h2 class="text-3xl font-bold mb-4">Branding</h2>
+                    <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <a href="http://webagency-template.netlify.app/portfolio" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                        LEARN MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">We are driven by values</h2>
+                    <p class="mb-6 opacity-90">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <a href="http://webagency-template.netlify.app/about-us" class="inline-block bg-white hover:bg-gray-100 text-indigo-600 font-medium py-3 px-6 rounded-lg transition duration-300">
+                        LEARN MORE
+                    </a>
+                </div>
+                <div>
+                    <img src="http://webagency-template.netlify.app/assets/valuesImg.webp" alt="Values" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <img src="http://webagency-template.netlify.app/assets/featuredWorkImg1.webp" alt="Featured Work 1" class="rounded-xl shadow-lg w-full h-auto hover:scale-105 transition duration-300">
+                <img src="http://webagency-template.netlify.app/assets/featuredWorkImg2.webp" alt="Featured Work 2" class="rounded-xl shadow-lg w-full h-auto hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300">
+                    <img src="http://webagency-template.netlify.app/assets/reviewImg1.webp" alt="Janet Morris" class="h-16 w-16 rounded-full mb-4 mx-auto">
+                    <p class="text-gray-600 italic mb-6 text-center">"What is the point of being alive if you don't at least try to do something remarkable?"</p>
+                    <h4 class="font-bold text-center">JANET MORRIS</h4>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300">
+                    <img src="http://webagency-template.netlify.app/assets/reviewImg2.webp" alt="Willie Brown" class="h-16 w-16 rounded-full mb-4 mx-auto">
+                    <p class="text-gray-600 italic mb-6 text-center">"What is the point of being alive if you don't at least try to do something remarkable?"</p>
+                    <h4 class="font-bold text-center">WILLIE BROWN</h4>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300">
+                    <img src="http://webagency-template.netlify.app/assets/reviewImg3.webp" alt="Sean Fisher" class="h-16 w-16 rounded-full mb-4 mx-auto">
+                    <p class="text-gray-600 italic mb-6 text-center">"What is the point of being alive if you don't at least try to do something remarkable?"</p>
+                    <h4 class="font-bold text-center">SEAN FISHER</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="bg-indigo-600 rounded-xl text-white p-12 text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's work together on your next web project</h2>
+                <p class="mb-8 max-w-2xl mx-auto opacity-90">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <a href="http://webagency-template.netlify.app/contact" class="inline-block bg-white hover:bg-gray-100 text-indigo-600 font-medium py-3 px-6 rounded-lg transition duration-300">
+                    GET IN TOUCH
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 All Rights Reserved | Developed By Ayan Shahid</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileSubmenu = document.getElementById('mobile-submenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Mobile submenu toggle
+        const portfolioBtn = mobileMenuBtn.nextElementSibling.querySelector('button');
+        
+        if (portfolioBtn) {
+            portfolioBtn.addEventListener('click', () => {
+                mobileSubmenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
